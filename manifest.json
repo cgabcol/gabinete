@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Gabinete | Painel de Gestão",
+    "description": "Painel administrativo local para organização de gabinete.",
+    "version": "1.0.0",
+    "permissions": ["notifications", "alarms", "storage"],
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "action": {
+        "default_popup": "dashboard.html",
+        "default_icon": {
+            "16": "assets/img/icon/16.png",
+            "48": "assets/img/icon/48.png",
+            "128": "assets/img/icon/128.png"
+        }
+    },
+    "icons": {
+        "16": "assets/img/icon/16.png",
+        "48": "assets/img/icon/48.png",
+        "128": "assets/img/icon/128.png"
+    }
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gabinete | Painel de Gestão</title>
+<link rel="stylesheet" href="css/dashboard.css"><script src="js/dashboard.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">G</div><div><strong>Gabinete</strong><small>Painel de gestão</small></div></div>
+    <div class="workspace-label">ESPAÇO DE TRABALHO</div>
+    <nav id="navigation" aria-label="Navegação principal"></nav>
+    <div class="sidebar-bottom"><div class="local-status"><span></span><div><b>Dados neste navegador</b><small>Salvamento automático</small></div></div><button class="nav-item" data-view="backup"><span class="nav-icon">⇧</span> Backup e dados</button></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><div class="breadcrumb"><span>Gabinete</span><b>/</b><strong id="crumb">Visão geral</strong></div><div class="top-actions"><button class="icon-button" id="notificationButton" title="Ver avisos" aria-label="Ver avisos">♧<i id="notificationDot"></i></button><div class="avatar">G</div></div></header>
+    <section class="page-content" id="pageContent"></section>
+  </main>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="recordDialog"><form id="recordForm" method="dialog"><div class="dialog-head"><div><span class="eyebrow" id="dialogEyebrow">CADASTRO</span><h2 id="dialogTitle">Novo registro</h2></div><button class="close-button" type="button" id="closeDialog" aria-label="Fechar">×</button></div><div id="formFields" class="form-grid"></div><div class="dialog-actions"><button class="button secondary" type="button" id="cancelDialog">Cancelar</button><button class="button primary" type="submit">Salvar registro</button></div></form></dialog>
+<input type="file" id="backupFile" accept=".json,application/json" hidden>
+</body>
+</html>
