@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/dashboard.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        #sistemasCadastrados {
+            width: 100%;
+            height: 410px;
+            margin: 10px 0;
+            display: block;
+            overflow-y: auto;
+        }
+
+        .sistema {
+            margin: 5px;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 60px;
+            background-color: #9e180c;
+            color: var(--branco);
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            font-size: 18px;
+        }
+
+        .sistema i {
+            margin-right: 5px;
+        }
+
+        .sistema:hover {
+            opacity: 0.9;
+        }
+
+        .acoes {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .acoes button {
+            width: 150px;
+            padding: 5px;
+            background-color: var(--verde);
+            color: var(--branco);
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .acoes button:hover {
+            background-color: var(--verde-escuro);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p class="marcado" id="sistemas">Sistemas</p>
+            <p id="notas">Notas</p>
+            <p id="avisos">Avisos</p>
+            <p id="processos">Processos</p>
+            <p id="conselho">Conselho</p>
+            <p id="contatos">Contatos</p>
+            <p id="tutoriais">Tutoriais</p>
+        </nav>
+        <div>
+            <div id="notificacao">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div id="contador">2</div>
+        </div>
+    </header>
+
+    <main>
+        <h2><i class="fa-solid fa-house"></i> Sistemas</h2>
+
+        <div id="sistemasCadastrados">
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+            </a>
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+        </div>
+        <div class="acoes">
+            <button id="administrarlinks">Administrar Links</button>
+        </div>
+    </main>
+</body>
+
+</html>

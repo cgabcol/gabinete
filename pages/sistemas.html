@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/dashboard.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p class="marcado" id="sistemas">Sistemas</p>
+            <p id="notas">Notas</p>
+            <p id="avisos">Avisos</p>
+            <p id="processos">Processos</p>
+            <p id="conselho">Conselho</p>
+            <p id="contatos">Contatos</p>
+            <p id="tutoriais">Tutoriais</p>
+        </nav>
+        <div>
+            <div id="notificacao">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div id="contador">2</div>
+        </div>
+    </header>
+
+    <main>
+        <h2><i class="fa-solid fa-house"></i> Sistemas</h2>
+
+        <form action="">
+            <h3><i class="fa-solid fa-plus"></i> Cadastro</h3>
+            <p>Nessa tela você poderá cadastrar <strong>sistemas [ links ],</strong> para acesso posterior via click
+                único.
+            </p>
+            <div class="linha">
+                <div class="quadro">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Digite o nome aqui...">
+                </div>
+
+                <div class="quadro">
+                    <label>Link</label>
+                    <input type="text" placeholder="Cole o link aqui...">
+                </div>
+
+                <div class="quadro">
+                    <label>Ícone</label>
+                    <select id="icone">
+                        <option value="fa-solid fa-brush">Pincel</option>
+                        <option value="fa-solid fa-house">Casa</option>
+                        <option value="fa-solid fa-image">Imagem</option>
+                        <option value="fa-solid fa-cloud">Nuvem</option>
+                        <option value="fa-solid fa-envelope">Envelope</option>
+                        <option value="fa-solid fa-star">Estrela</option>
+                        <option value="fa-solid fa-heart">Coração</option>
+                        <option value="fa-solid fa-paperclip">Clip</option>
+                        <option value="fa-solid fa-folder">Pasta</option>
+                        <option value="fa-solid fa-users">Pessoas</option>
+                        <option value="fa-solid fa-robot">Robô</option>
+                    </select>
+                </div>
+            </div>
+            <button id="salvar">Salvar Links</button>
+            <button id="administrar">Administrar Links</button>
+        </form>
+
+        <div id="sistemasCadastrados">
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+            <a href="https://sei.ifro.com.br" target="_blank" class="sistema">
+                <i class="fa-solid fa-house"></i>
+                SEI
+            </a>
+        </div>
+    </main>
+</body>
+
+</html>

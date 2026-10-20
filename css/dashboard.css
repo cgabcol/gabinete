@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #F2F2F2;
+    --roxo: #5b0eb1;
+    --roxo-medio: #9649eb;
+    --roxo-claro: #aa5dfe;
+    --vermelho: #9e180c;
+    --vermelho-escuro: #8a1308;
+    --cinza: gray;
+    --verde: #307d24;
+    --verde-escuro: #245e1b;
+
+    --tamanho-janela: 600px;
+}
+
+body {
+    width: var(--tamanho-janela);
+    height: var(--tamanho-janela);
+    padding: 20px;
+    background-color: var(--branco);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    height: 25px;
+}
+
+nav p {
+    font-size: 16px;
+    margin-right: 15px;
+    color: var(--roxo);
+    cursor: pointer;
+}
+
+nav p:hover {
+    color: var(--roxo-claro);
+    border-bottom: 2px solid var(--roxo-claro);
+}
+
+.marcado {
+    color: var(--roxo-medio);
+    border-bottom: 2px solid var(--roxo-medio);
+}
+
+#notificacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: var(--roxo-claro);
+    cursor: pointer;
+}
+
+#notificacao:hover {
+    background-color: var(--roxo-medio);
+}
+
+#notificacao i {
+    color: var(--roxo);
+}
+
+#contador {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    position: relative;
+    top: -35px;
+    right: -16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    color: var(--roxo);
+    margin: 0 0 8px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main p {
+    color: var(--cinza);
+    margin: 10px 0 15px 0;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Fundo da barra de rolagem (trilho) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+/* O "botão" que é arrastado */
+::-webkit-scrollbar-thumb {
+    background: var(--roxo-medio);
+    border-radius: 4px;
+}
+
+/* Cor do botão ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--roxo);
+}
